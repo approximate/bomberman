@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Alle_Richtung_Bomberman.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends KinematicBody2D
+
+func _ready():
+	pass
+
+func _process(delta):
+	if Input.is_action_pressed(\"ui_left\"):
+			position.x = position.x - 1
+	if Input.is_action_pressed(\"ui_right\"):
+			position.x = position.x + 1
+	if Input.is_action_pressed(\"ui_up\"):
+			position.y = position.y - 1
+	if Input.is_action_pressed(\"ui_down\"):
+			position.y = position.y + 1
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 24.8278 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 28.8451, 26.4298 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 192, 192 )
+script = SubResource( 1 )
+
+[node name="Mensch_Sprite_Junge_Vorne" type="Sprite" parent="KinematicBody2D"]
+texture = ExtResource( 1 )
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 0, 0.237827 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 259.389, 190.581 )
+shape = SubResource( 3 )
