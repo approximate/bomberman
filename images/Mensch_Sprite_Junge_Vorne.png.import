@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mensch_Sprite_Junge_Vorne.png-4506d9aa81b2d35509200b5ad852e497.stex"
+path="res://.import/Mensch_Sprite_Junge_Vorne.png-241af1db29b00410d604ab4af6962906.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Mensch_Sprite_Junge_Vorne.png"
-dest_files=[ "res://.import/Mensch_Sprite_Junge_Vorne.png-4506d9aa81b2d35509200b5ad852e497.stex" ]
+source_file="res://Mensch_Sprite_Junge_Vorne.png"
+dest_files=[ "res://.import/Mensch_Sprite_Junge_Vorne.png-241af1db29b00410d604ab4af6962906.stex" ]
 
 [params]
 
