@@ -36,13 +36,17 @@ func _process(delta):
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
 		$AnimatedSprite.play()
+		$Step.play()
 	else:
 		$AnimatedSprite.stop()
+		$Step.stop()
 		
 	position += velocity * delta
 
 	position.x = clamp(position.x, 0, screen_size.x)
 	position.y = clamp(position.y, 0, screen_size.y)
+	yield($Step, "finished")
+	
 
 
 func _on_Player_body_entered(body):

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/schritt.wav-17bd48f72a737ef6a3ac7fc20ce491e9.sample"
+
+[deps]
+
+source_file="res://sounds/schritt.wav"
+dest_files=[ "res://.import/schritt.wav-17bd48f72a737ef6a3ac7fc20ce491e9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

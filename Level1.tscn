@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://images/Feld.png" type="Texture" id=1]
 [ext_resource path="res://images/Ziegel.png" type="Texture" id=2]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Level1.gd" type="Script" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0.833374, 64, 0 )
@@ -45,6 +46,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0.833374, 64, 0 )
 1/z_index = 0
 
 [node name="Level1" type="CanvasLayer"]
+script = ExtResource( 4 )
 
 [node name="TileMap" type="TileMap" parent="."]
 show_behind_parent = true
@@ -54,3 +56,4 @@ tile_data = PoolIntArray( 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 367.001, 317.88 )
+[connection signal="hit" from="Player" to="." method="_on_Player_hit"]

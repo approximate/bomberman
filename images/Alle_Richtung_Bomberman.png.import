@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Alle_Richtung_Bomberman.png-e15e408f05ec39e793ab872497023d1f.stex"
+path="res://.import/Alle_Richtung_Bomberman.png-70370a419ea1c43d6c0fb6be445fd206.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Alle_Richtung_Bomberman.png"
-dest_files=[ "res://.import/Alle_Richtung_Bomberman.png-e15e408f05ec39e793ab872497023d1f.stex" ]
+source_file="res://images/Alle_Richtung_Bomberman.png"
+dest_files=[ "res://.import/Alle_Richtung_Bomberman.png-70370a419ea1c43d6c0fb6be445fd206.stex" ]
 
 [params]
 
